@@ -42,7 +42,7 @@ var MapboxGLDraw = new MapboxDraw({
 How to enable rectangle drag mode
 ---
 To enable the rectangle drag mode, you need to execute [`changeMode`](https://github.com/mapbox/mapbox-gl-draw/blob/master/docs/API.md#changemodemode-string-options-object-draw) method on your Mapbox GL Draw instance.
-```
+```js
 drawInstance.changeMode('draw_rectangle_drag');
 ```
 
