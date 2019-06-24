@@ -9,18 +9,18 @@ You can install this plugin either using npm or JSDeliver.
 
 ### Using npm
 We deliver ESM compatible code through our npm module, so that you can import it in your project and compile it without issues.
-```
+```shell
 npm i mapboxgl-draw-rectangle-drag --save
 ```
 The module exports a default binding to the module, so you can import it like:
-```
+```js
 import mapboxGLDrawRectangleDrag from 'mapboxgl-draw-rectangle-drag';
 ```
 
 ### Using JSDeliver
 We have a script-compatible version of the plugin as well, ready to be imported in your HTML code using a `<script>` tag.
-```
-<script src="" />
+```html
+<script src="https://cdn.jsdelivr.net/gh/CartoDB/mapboxgl-draw-rectangle-drag@1.0.1/build/mapboxgl-draw-rectangle-drag.browser.js"></script>
 ```
 
 A variable named `mapboxGLDrawRectangleDrag` is defined within the global scope to be included in your Mapbox GL Draw modes.
@@ -46,4 +46,4 @@ To enable the rectangle drag mode, you need to execute [`changeMode`](https://gi
 drawInstance.changeMode('draw_rectangle_drag');
 ```
 
-Unfortunately, custom modes cannot add custom controls to Mapbox GL Draw plugins. So, if you want to have a custom button to enable the control you need to create one by yourself. You can take some ideas from [this CodePen](https://codepen.io/roblabs/pen/zJjPzX)
+Unfortunately, custom modes cannot add custom controls to Mapbox GL Draw plugins. So, if you want to have a custom button to enable the control you need to create one by yourself. You can take some ideas from [this CodePen](https://codepen.io/roblabs/pen/zJjPzX).
