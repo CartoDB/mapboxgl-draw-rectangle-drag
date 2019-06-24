@@ -74,7 +74,6 @@ const DrawRectangleDrag = {
   onStop(state) {
     enableZoom(this);
     this.updateUIClasses({ mouse: 'none' });
-    this.activateUIButton();
 
     if (!this.getFeature(state.rectangle.id)) {
       return;

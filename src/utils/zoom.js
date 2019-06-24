@@ -1,21 +1,20 @@
 export function enableZoom(context) {
   setTimeout(() => {
     // eslint-disable-next-line
-    const getInitialValue = context._ctx && context._ctx.store && context._ctx.store.getInitialConfigValue;
-    const map = context.map && context.map.doubleClickZoom;
+    const store = context._ctx && context._ctx.store;
+    const map = context.map && context.map;
 
-    if (!map && !getInitialValue) {
+    if (!map && !store.getInitialValue) {
       return;
     }
 
-    if (!getInitialValue('doubleClickZoom')) {
+    if (!store.getInitialConfigValue('doubleClickZoom')) {
       return;
     }
 
     map.doubleClickZoom.enable();
   }, 0);
 }
-
 
 export function disableZoom(context) {
   setTimeout(() => {
