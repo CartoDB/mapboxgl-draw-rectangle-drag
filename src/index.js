@@ -1,4 +1,5 @@
 import createRectangle from './utils/create-rectangle';
+import { enableZoom, disableZoom } from './utils/zoom';
 
 const DrawRectangleDrag = {
   onSetup() {
@@ -10,6 +11,7 @@ const DrawRectangleDrag = {
     // UI Tweaks
     this.updateUIClasses({ mouse: 'add' });
     this.setActionableState({ trash: true });
+    disableZoom(this);
 
     return { rectangle };
   },
@@ -70,6 +72,7 @@ const DrawRectangleDrag = {
   },
 
   onStop(state) {
+    enableZoom(this);
     this.updateUIClasses({ mouse: 'none' });
     this.activateUIButton();
 
