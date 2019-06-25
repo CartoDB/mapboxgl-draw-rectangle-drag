@@ -1,8 +1,10 @@
 {
   "name": "mapboxgl-draw-rectangle-drag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Mapbox GL Draw plugin to create a rectangle via click & drag",
-  "main": "src/index.js",
+  "main": "build/mapboxgl-draw-rectangle-drag.module.js",
+  "module": "build/mapboxgl-draw-rectangle-drag.module.js",
+  "browser": "build/mapboxgl-draw-rectangle-drag.browser.js",
   "scripts": {
     "lint": "eslint .",
     "build": "npm run build:browser && npm run build:module",
