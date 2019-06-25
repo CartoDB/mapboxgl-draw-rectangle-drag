@@ -16,6 +16,7 @@ module.exports = {
   },
   rules: {
     'comma-dangle': 'off',
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ["configuration/**/*"]}]
   }
 };

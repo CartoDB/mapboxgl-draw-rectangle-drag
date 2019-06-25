@@ -37,7 +37,7 @@ Or add your own version number to the URL:
 A variable named `mapboxGLDrawRectangleDrag` is defined within the global scope to be included in your Mapbox GL Draw modes.
 
 ## Usage
-You need to follow these steps in order to enable the control your Draw instance.
+You need to follow these steps in order to enable the control in your Draw instance.
 
 ### Add mode to Mapbox GL Draw
 Once the module/script is imported, you need to include the new mode within Mapbox GL's predefined modes.
